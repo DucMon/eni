@@ -68,7 +68,7 @@ else {
 		$page[ 'body' ] .= "</select>";
 	}
 	else
-		$page[ 'body' ] .= "\n				<input type=\"text\" size=\"15\" name=\"id\">";
+		$page[ 'body' ] .= "\n				<input type=\"text\" size=\"60\" name=\"id\">";
 
 	$page[ 'body' ] .= "\n				<input type=\"submit\" name=\"Submit\" value=\"Submit\">
 			</p>\n";
