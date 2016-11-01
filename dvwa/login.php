@@ -9,7 +9,7 @@ dvwaDatabaseConnect();
 
 if( isset( $_POST[ 'Login' ] ) ) {
 	// Anti-CSRF
-	checkToken( $_REQUEST[ 'user_token' ], $_SESSION[ 'session_token' ], 'login.php' );
+	#checkToken( $_REQUEST[ 'user_token' ], $_SESSION[ 'session_token' ], 'login.php' );
 
 	$user = $_POST[ 'username' ];
 	$pass = $_POST[ 'password' ];
@@ -46,7 +46,7 @@ Header( 'Content-Type: text/html;charset=utf-8' );      // TODO- proper XHTML he
 Header( 'Expires: Tue, 23 Jun 2009 12:00:00 GMT' );     // Date in the past
 
 // Anti-CSRF
-generateSessionToken();
+#generateSessionToken();
 
 echo "
 <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">
@@ -94,7 +94,7 @@ echo "
 
 	</fieldset>
 
-	" . tokenField() . "
+	" . "" . "
 
 	</form>
 
