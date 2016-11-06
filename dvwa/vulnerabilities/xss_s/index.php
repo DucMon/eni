@@ -44,7 +44,7 @@ $page[ 'body' ] .= "
 				</tr>
 				<tr>
 					<td width=\"100\">Message *</td>
-					<td><textarea name=\"mtxMessage\" cols=\"50\" rows=\"3\" maxlength=\"50\"></textarea></td>
+					<td><textarea name=\"mtxMessage\" cols=\"50\" rows=\"3\" maxlength=\"500\"></textarea></td>
 				</tr>
 				<tr>
 					<td width=\"100\">&nbsp;</td>
